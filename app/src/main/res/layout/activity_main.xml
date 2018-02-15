@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/ScrollViewStyle"
     tools:context="com.example.android.smallbusiness.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout style="@style/RelativeLayoutStyle">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            style="@style/ImageViewStyle"
+            android:contentDescription="@string/img_description"
+            android:src="@drawable/modinside" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/TitleStyle"
+            android:text="@string/restaurant_name" />
+
+        <TextView
+            android:id="@+id/intro"
+            style="@style/IntroStyle"
+            android:text="@string/intro" />
+
+        <TextView
+            android:id="@+id/openingHours"
+            style="@style/OpeningHours"
+            android:text="@string/openingHours" />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/Address"
+            android:text="@string/address"
+            />
+
+        <TextView
+            android:id="@+id/phone"
+            style="@style/Phone"
+            android:text="@string/phone"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            style="@style/WWW"
+            android:text="@string/www"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>
