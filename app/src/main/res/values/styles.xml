@@ -1,74 +1,95 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="appTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="ScrollViewStyle">
+    <style name="scrollView">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:fillViewport">true</item>
         <item name="android:scrollbarStyle">insideOverlay</item>
         <item name="android:scrollbars">vertical</item>
     </style>
 
-    <style name="RelativeLayoutStyle">
+    <style name="relativeLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
     </style>
 
-    <style name="ImageViewStyle">
+    <style name="imageView">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/mod_inside</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
 
-    <style name="TitleStyle">
+    <style name="LinearLayoutGeneralSection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:background">@color/textBoxColor</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <style name="LinearLayoutContactSection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:paddingBottom">@dimen/padding</item>
+        <item name="android:paddingLeft">@dimen/padding</item>
+        <item name="android:paddingRight">@dimen/padding</item>
+        <item name="android:background">@color/textBoxColor</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="title">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/businessNameFontSize</item>
         <item name="android:textColor">@color/fontColor</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">@dimen/padding</item>
     </style>
 
-    <style name="IntroStyle">
+    <style name="label">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/labelFontSize</item>
         <item name="android:textColor">@color/fontColor</item>
-        <item name="android:layout_below">@id/name</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/padding</item>
+        <item name="android:paddingBottom">@dimen/padding</item>
     </style>
 
-    <style name="OpeningHours">
+    <style name="content">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/contentFontSize</item>
         <item name="android:textColor">@color/fontColor</item>
-        <item name="android:layout_below">@id/intro</item>
     </style>
 
-
-    <style name="Address">
+    <style name="phone">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/contentFontSize</item>
         <item name="android:textColor">@color/fontColor</item>
-        <item name="android:layout_below">@id/openingHours</item>
-    </style>
-
-    <style name="Phone">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/fontColor</item>
-        <item name="android:layout_below">@id/address</item>
         <item name="android:autoLink">phone</item>
     </style>
 
-    <style name="WWW">
+    <style name="www">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/contentFontSize</item>
         <item name="android:textColor">@color/fontColor</item>
-        <item name="android:layout_below">@id/phone</item>
+        <item name="android:paddingBottom">@dimen/padding</item>
         <item name="android:autoLink">web</item>
     </style>
 

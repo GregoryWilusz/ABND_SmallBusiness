@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#734016</color>
     <color name="colorAccent">#FF4081</color>
     <color name="fontColor">#FFF</color>
+    <color name="textBoxColor">#cc000000</color>
 </resources>

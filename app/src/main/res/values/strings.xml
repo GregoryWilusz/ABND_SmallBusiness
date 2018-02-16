@@ -1,10 +1,15 @@
 <resources>
-    <string name="app_name">SmallBusiness</string>
-    <string name="img_description">MOD inside</string>
-    <string name="restaurant_name">MOD Restaurant</string>
-    <string name="intro">The best atmosphere and even better donuts!</string>
-    <string name="openingHours">Opening hours: Monday-Sunday 10:00-00:00</string>
-    <string name="address">8 Oleandrów St, Warsaw, 00-001</string>
+    <string name="appName">SmallBusiness</string>
+    <string name="imgDescription">MOD inside</string>
+    <string name="restaurantName">MOD Restaurant</string>
+    <string name="intro">We bring you the best what you deserved.</string>
+    <string name="intro2">The cozy atmosphere, delicious drinks and the best donuts in town!</string>
+    <string name="openingHoursLabel">Opening hours:</string>
+    <string name="openingHours">Sunday-Monday 10:00-22:00</string>
+    <string name="openingHours2">Tuesday-Friday 10:00-22:00</string>
+    <string name="address">Address:</string>
+    <string name="addressDetails">8 Oleandrów St, Warsaw, 00-001</string>
+    <string name="ContactUs">Contact us:</string>
     <string name="phone">(+48) 570 205 746</string>
     <string name="www">www.moddonuts.com</string>
 </resources>

@@ -1,50 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/ScrollViewStyle"
-    tools:context="com.example.android.smallbusiness.MainActivity">
+    style="@style/scrollView">
 
-    <RelativeLayout style="@style/RelativeLayoutStyle">
+    <RelativeLayout style="@style/relativeLayout">
 
-        <ImageView
-            style="@style/ImageViewStyle"
-            android:contentDescription="@string/img_description"
-            android:src="@drawable/modinside" />
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
 
-        <TextView
-            android:id="@+id/name"
-            style="@style/TitleStyle"
-            android:text="@string/restaurant_name" />
+            <ImageView style="@style/imageView"
+                android:contentDescription="@string/imgDescription"/>
 
-        <TextView
-            android:id="@+id/intro"
-            style="@style/IntroStyle"
-            android:text="@string/intro" />
+        </RelativeLayout>
 
-        <TextView
-            android:id="@+id/openingHours"
-            style="@style/OpeningHours"
-            android:text="@string/openingHours" />
+        <RelativeLayout
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/address"
-            style="@style/Address"
-            android:text="@string/address"
-            />
+            <LinearLayout
+                android:id="@+id/generalContent"
+                style="@style/LinearLayoutGeneralSection">
 
-        <TextView
-            android:id="@+id/phone"
-            style="@style/Phone"
-            android:text="@string/phone"
-            />
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/title"
+                    android:text="@string/restaurantName" />
 
-        <TextView
-            android:id="@+id/email"
-            style="@style/WWW"
-            android:text="@string/www"
-            />
+                <TextView
+                    android:id="@+id/intro"
+                    style="@style/content"
+                    android:text="@string/intro" />
 
+                <TextView
+                    android:id="@+id/intro2"
+                    style="@style/content"
+                    android:text="@string/intro2" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout style="@style/LinearLayoutContactSection">
+
+                <TextView
+                    style="@style/label"
+                    android:text="@string/openingHoursLabel" />
+
+                <TextView
+                    style="@style/content"
+                    android:text="@string/openingHours" />
+
+                <TextView
+                    style="@style/content"
+                    android:text="@string/openingHours2" />
+
+                <TextView
+                    style="@style/label"
+                    android:text="@string/address" />
+
+                <TextView
+                    style="@style/content"
+                    android:text="@string/addressDetails" />
+
+                <TextView
+                    style="@style/label"
+                    android:text="@string/ContactUs" />
+
+                <TextView
+                    style="@style/phone"
+                    android:text="@string/phone" />
+
+                <TextView
+                    style="@style/www"
+                    android:text="@string/www" />
+
+            </LinearLayout>
+        </RelativeLayout>
 
     </RelativeLayout>
 
 </ScrollView>
+
