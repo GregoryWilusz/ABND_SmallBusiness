@@ -23,9 +23,11 @@
 
     <style name="imageView">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:src">@drawable/mod_inside</item>
         <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_centerHorizontal">true</item>
+
     </style>
 
     <style name="LinearLayoutGeneralSection">
