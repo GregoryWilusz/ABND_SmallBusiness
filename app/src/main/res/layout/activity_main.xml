@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center_vertical"
+    style="@style/relativeLayout"
     tools:context=".MainActivity">
 
     <ImageView
@@ -14,81 +12,57 @@
 
         <RelativeLayout style="@style/relativeLayout">
 
+            <LinearLayout style="@style/LinearLayoutGeneralSection">
 
-            <RelativeLayout
-                android:id="@+id/up"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/title"
+                    android:text="@string/restaurantName" />
 
-                <LinearLayout
-                    android:id="@+id/generalContent"
-                    style="@style/LinearLayoutGeneralSection">
+                <TextView
+                    style="@style/content"
+                    android:text="@string/intro" />
 
-                    <TextView
-                        android:id="@+id/name"
-                        style="@style/title"
-                        android:text="@string/restaurantName" />
+                <TextView
+                    style="@style/content"
+                    android:text="@string/intro2" />
+            </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/intro"
-                        style="@style/content"
-                        android:text="@string/intro" />
-
-                    <TextView
-                        android:id="@+id/intro2"
-                        style="@style/content"
-                        android:text="@string/intro2" />
-
-                </LinearLayout>
-            </RelativeLayout>
+            <LinearLayout style="@style/LinearLayoutContactSection">
 
 
-            <RelativeLayout
-                android:id="@+id/down"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true">
+                <TextView
+                    style="@style/label"
+                    android:text="@string/openingHoursLabel" />
 
-                <LinearLayout style="@style/LinearLayoutContactSection">
+                <TextView
+                    style="@style/content"
+                    android:text="@string/openingHours" />
 
-                    <TextView
-                        style="@style/label"
-                        android:text="@string/openingHoursLabel" />
+                <TextView
+                    style="@style/content"
+                    android:text="@string/openingHours2" />
 
-                    <TextView
-                        style="@style/content"
-                        android:text="@string/openingHours" />
+                <TextView
+                    style="@style/label"
+                    android:text="@string/address" />
 
-                    <TextView
-                        style="@style/content"
-                        android:text="@string/openingHours2" />
+                <TextView
+                    style="@style/content"
+                    android:text="@string/addressDetails" />
 
-                    <TextView
-                        style="@style/label"
-                        android:text="@string/address" />
+                <TextView
+                    style="@style/label"
+                    android:text="@string/ContactUs" />
 
-                    <TextView
-                        style="@style/content"
-                        android:text="@string/addressDetails" />
+                <TextView
+                    style="@style/phone"
+                    android:text="@string/phone" />
 
-                    <TextView
-                        style="@style/label"
-                        android:text="@string/ContactUs" />
+                <TextView
+                    style="@style/www"
+                    android:text="@string/www" />
 
-                    <TextView
-                        style="@style/phone"
-                        android:text="@string/phone" />
-
-                    <TextView
-                        style="@style/www"
-                        android:text="@string/www" />
-
-                </LinearLayout>
-            </RelativeLayout>
-
+            </LinearLayout>
         </RelativeLayout>
-
     </ScrollView>
-
 </RelativeLayout>
-

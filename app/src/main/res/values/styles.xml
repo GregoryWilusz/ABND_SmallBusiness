@@ -11,22 +11,19 @@
     <style name="scrollView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:fillViewport">true</item>
-        <item name="android:scrollbarStyle">insideOverlay</item>
-        <item name="android:scrollbars">vertical</item>
     </style>
 
     <style name="relativeLayout">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="imageView">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:src">@drawable/mod_inside</item>
         <item name="android:scaleType">centerCrop</item>
-        <item name="android:layout_centerHorizontal">true</item>
+
 
     </style>
 
@@ -49,8 +46,8 @@
         <item name="android:paddingRight">@dimen/padding</item>
         <item name="android:background">@color/textBoxColor</item>
         <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
     </style>
-
 
     <style name="title">
         <item name="android:layout_width">wrap_content</item>
@@ -68,7 +65,7 @@
         <item name="android:textColor">@color/fontColor</item>
         <item name="android:textStyle">bold</item>
         <item name="android:paddingTop">@dimen/padding</item>
-        <item name="android:paddingBottom">@dimen/padding</item>
+        <item name="android:paddingBottom">@dimen/paddingBottom</item>
     </style>
 
     <style name="content">
@@ -91,7 +88,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/contentFontSize</item>
         <item name="android:textColor">@color/fontColor</item>
-        <item name="android:paddingBottom">@dimen/padding</item>
         <item name="android:autoLink">web</item>
     </style>
 
